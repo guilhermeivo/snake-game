@@ -17,8 +17,6 @@ O layout da aplicação é:
 
 <div align="center">
     <img src="https://github.com/guilhermeivo/snake-game/blob/master/.github/InGameScreen.png" alt="SnakeGame" title="SnakeGame" />
-</div>
-<div align="center">
     <img src="https://github.com/guilhermeivo/snake-game/blob/master/.github/GameOverScreen.png" alt="SnakeGame" title="SnakeGame" />
 </div>
 
