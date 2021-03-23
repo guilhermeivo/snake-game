@@ -4,6 +4,7 @@ const snake = {
     ],    
     colorBody: '#569445',
     colorHead: '#5a8050',
+    movimentationDirection: ['Left'],
 
     // move the snake around the map
     move() {
@@ -19,18 +20,28 @@ const snake = {
 
         // puts the head in the position corresponding to the direction
         if (setup.keys['ArrowUp'] || setup.keys['KeyW']) {
+            this.movimentationDirection.push('Up')
+
             dx = 0
             dy -= 1
         } else if (setup.keys['ArrowLeft'] || setup.keys['KeyA']) {
+            this.movimentationDirection.push('Left')
+
             dx -= 1
             dy = 0
         } else if (setup.keys['ArrowDown'] || setup.keys['KeyS']) {
+            this.movimentationDirection.push('Down')
+
             dx = 0
             dy += 1
         } else if (setup.keys['ArrowRight'] || setup.keys['KeyD']) {
+            this.movimentationDirection.push('Right')
+
             dx += 1
             dy = 0
         } else {
+            this.movimentationDirection.push('Left')
+
             dx += 1
             dy = 0
         }

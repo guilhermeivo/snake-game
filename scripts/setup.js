@@ -69,6 +69,7 @@ const setup = {
         fruit.position = fruit.generatePosition()
         snake.position = []
         snake.position[0] = {x: 4, y: 4}
+        snake.movimentationDirection = ['Left']
 
         // start the game
         this.load()
