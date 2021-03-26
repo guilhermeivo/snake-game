@@ -1,3 +1,7 @@
+<div align="center">
+    <h1>🐍 SnakeGame</h1>
+</div>
+
 ## 💻 Sobre o projeto
 
 🐍 SnakeGame - Jogo da cobrinha no gameboy.
