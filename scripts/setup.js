@@ -13,8 +13,7 @@ const setup = {
         dieSound: 'DieSound',
 
         loadAudio(filename) {
-            const file = `../audio/${filename}.mp3?cb=${new Date().getTime()}`
-            const audio = new Audio(file)
+            const audio = document.querySelector(`#${ filename }`)
 
             audio.load()
 
