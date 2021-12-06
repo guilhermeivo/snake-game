@@ -5,6 +5,7 @@
 ## 💻 Sobre o projeto
 
 🐍 SnakeGame - Jogo da cobrinha no gameboy.
+
 **Enviado**: [itch.io](https://itch.io/jam/game-off-2021/rate/1260575)
 
 ## 🎨 Layout
