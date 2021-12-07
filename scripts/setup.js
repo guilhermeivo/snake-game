@@ -7,6 +7,7 @@ const setup = {
     gameSpeed: 200,
     sound: true,
     soundTheme: false,
+    fruitsEat: 0,
     godMode: false,
 
     audio: {
@@ -137,6 +138,8 @@ const setup = {
         if (this.sound) this.audio.dieSound.play()
 
         this.mainScreen('Game Over')
+
+        this.fruitsEat = 0
     },
 
     // draws the main screen
@@ -153,6 +156,21 @@ const setup = {
 
         ctx.font = '16px "DotGothic16"'
         ctx.fillText('Press any button', canvas.width / 2, (canvas.height / 2) + 25)
-        ctx.fillText('to start', canvas.width / 2, (canvas.height / 2) + 40)        
+        ctx.fillText('to start', canvas.width / 2, (canvas.height / 2) + 40)    
+        
+        if (title !== 'Snake Game') {
+            ctx.fillStyle = '#ff0000'
+
+            ctx.fillRect(
+                setup.step / 2, 
+                (canvas.height - setup.step + 1) - setup.step / 2, 
+                setup.step - 2, 
+                setup.step - 2
+            )  
+
+            ctx.font = '16px "DotGothic16"'
+            ctx.fillStyle = snake.colorBody
+            ctx.fillText(this.fruitsEat, setup.step / 2 + setup.step + 10, ((canvas.height - setup.step + 1) - setup.step / 2) + (setup.step / 2) + 5)
+        }
     }
 }

@@ -1,4 +1,5 @@
 const collision = {
+
     collisions() {
         collision.fruitCollision()
 
@@ -21,6 +22,8 @@ const collision = {
             if (setup.sound) setup.audio.appleCrunch.play()
 
             snake.increaseBody()
+
+            setup.fruitEat = setup.fruitsEat++
         }
     },
 
