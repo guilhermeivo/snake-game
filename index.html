@@ -7,7 +7,7 @@
     <meta name="description" content="SnakeGame">    
     <title>SnakeGame</title>
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico">
     <meta name="theme-color" content="#569445">
 
     <meta property="og:image:width" content="279">
@@ -43,20 +43,29 @@
                         <div></div>
                     </div>
 
-                    <div class="buttonTop"></div>     <!-- ButtonTop    -->
-                    <div class="buttonLeft"></div>    <!-- buttonLeft   -->
-                    <div class="buttonBottom"></div>  <!-- buttonBottom -->
-                    <div class="buttonRight"></div>   <!-- buttonRight  -->
+                    <div class="buttonTop" title="Button Top"></div> <!-- ButtonTop    -->
+                    <div class="buttonLeft" title="Button Left"></div> <!-- buttonLeft   -->
+                    <div class="buttonBottom" title="Button Bottom"></div> <!-- buttonBottom -->
+                    <div class="buttonRight" title="Button Right"></div> <!-- buttonRight  -->
 
                 </div>
                 <div class="extraButtons">
-                    <div class="buttonA"></div>       <!-- buttonA      -->
-                    <div class="buttonB"></div>       <!-- buttonB      -->
+                    <div class="buttonA" title="Button A"></div> <!-- buttonA      -->
+                    <div class="buttonB" title="Button B"></div> <!-- buttonB      -->
                 </div>
 
-            </div>    
+            </div>  
     
-            <div class="shadow-videogame"></div>
+            <div class="mask">
+                <div class="shadow-videogame"></div>
+            </div>            
+        </div>
+
+        <div class="switch-sounds buttonSound" title="Button Sound">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
         </div>
 
         <div class="shadow-videogame-bottom"></div>
@@ -64,11 +73,15 @@
 
     <audio id="AppleCrunch">
         <source src="./audio/AppleCrunch.mp3" type="audio/mpeg">
-        Seu navegador não possui suporte ao elemento audio
+        Your browser does not support the audio element
     </audio>
     <audio id="DieSound">
         <source src="./audio/DieSound.mp3" type="audio/mpeg">
-        Seu navegador não possui suporte ao elemento audio
+        Your browser does not support the audio element
+    </audio>
+    <audio id="Theme">
+        <source src="./audio/Theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element
     </audio>
     
     <script src="./scripts/snake.js"></script>

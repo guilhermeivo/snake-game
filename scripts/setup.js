@@ -5,12 +5,15 @@ const setup = {
     keys: [],
     inGame: false,
     gameSpeed: 200,
+    sound: true,
+    soundTheme: false,
     godMode: false,
 
     audio: {
         // audios
         appleCrunch: 'AppleCrunch',
         dieSound: 'DieSound',
+        theme: 'Theme',
 
         loadAudio(filename) {
             const audio = document.querySelector(`#${ filename }`)
@@ -25,6 +28,7 @@ const setup = {
 
             this.appleCrunch = this.loadAudio(this.appleCrunch)
             this.dieSound = this.loadAudio(this.dieSound)
+            this.theme = this.loadAudio(this.theme)
         } 
     },
 
@@ -50,6 +54,10 @@ const setup = {
         extraButtons: [
             document.querySelector('.buttonA'),
             document.querySelector('.buttonB')
+        ],
+
+        configButtons: [
+            document.querySelector('.buttonSound')
         ]
     },
 
@@ -79,12 +87,14 @@ const setup = {
 
     // updates the game screen
     update() {    
-        if (this.inGame == true) {    
+        if (this.inGame == true) {
             setTimeout(() => {                
                 this.createBoard()
                 fruit.draw()
                 snake.draw()
                 collision.collisions()
+
+                utilities.themeSound()
 
                 this.update()
             }, this.gameSpeed)
@@ -123,7 +133,8 @@ const setup = {
 
     gameOver() {
         this.inGame = false
-        this.audio.dieSound.play()
+
+        if (this.sound) this.audio.dieSound.play()
 
         this.mainScreen('Game Over')
     },

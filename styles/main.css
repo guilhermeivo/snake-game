@@ -44,6 +44,15 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 12px;
+}
+
+.body-console .mask {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -294,4 +303,46 @@ body {
     border-radius: 100%;
 
     transform: rotateX(60deg);
+}
+
+.switch-sounds {
+    position: absolute;
+    right: 80%;
+    bottom: 100%;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+}
+
+.switch input[type=checkbox] {
+    opacity: 0;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 26px;
+    left: 0;
+    bottom: -6px;
+    background-color: #e0dfdf;
+    transition: .4s;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.slider:hover::before {
+    background-color: #fefefe;
+    cursor: url('../images/cursor2.png'), auto;
+}
+
+.slider:hover {
+    cursor: url('../images/cursor2.png'), auto;
 }

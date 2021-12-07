@@ -17,8 +17,9 @@ const collision = {
             fruit.position.y == head.y
         ) {            
             fruit.position = fruit.generatePosition()
+            
+            if (setup.sound) setup.audio.appleCrunch.play()
 
-            setup.audio.appleCrunch.play()
             snake.increaseBody()
         }
     },
