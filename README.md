@@ -1,25 +1,20 @@
-<div align="center">
-    <h1>🐍 SnakeGame</h1>
-</div>
+<p align="center">
+  <h1>🐍 SnakeGame</h1>
+</p>
 
-## 💻 Sobre o projeto
+<p align="center">
+  Jogo da cobrinha no gameboy.
+</p>
 
-🐍 SnakeGame - Jogo da cobrinha no gameboy.
+<h1 align="center">
+    <img alt="Letmeask" src=".github/cover.svg" />
+</h1>
 
 **Enviado**: [itch.io](https://itch.io/jam/game-off-2021/rate/1260575)
 
-## 🎨 Layout
-
-O layout da aplicação é:
-
-<div align="center">
-    <img width="25%" src="https://github.com/guilhermeivo/snake-game/blob/master/.github/InGameScreen.png" alt="SnakeGame" title="SnakeGame" />
-    <img width="25%" src="https://github.com/guilhermeivo/snake-game/blob/master/.github/GameOverScreen.png" alt="SnakeGame" title="SnakeGame" />
-</div>
-
 # :computer: Tecnologias
 
-Este projeto foi realizado usando as seguintes tecnologias:
+Esse projeto foi realizado usando as seguintes tecnologias:
 
 <ul>
   <li><a href="https://www.javascript.com/">JavaScript</a></li>
@@ -34,3 +29,7 @@ Este projeto foi realizado usando as seguintes tecnologias:
 # Clone o repositório em sua máquina
 $ git clone https://github.com/guilhermeivo/snake-game.git
 ```
+
+## Licença
+
+Esse projeto está sob licença. Veja o arquivo [`LICENÇA`](https://github.com/guilhermeivo/snake-game/blob/master/LICENSE) para mais detalhes.
