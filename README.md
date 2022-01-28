@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/cover.svg" />
+    <img alt="cover" src=".github/cover.png" />
 </h1>
 
 **Enviado**: [itch.io](https://itch.io/jam/game-off-2021/rate/1260575)
