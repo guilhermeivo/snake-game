@@ -12,7 +12,7 @@
 
 **Enviado**: [itch.io](https://itch.io/jam/game-off-2021/rate/1260575)
 
-# :computer: Tecnologias
+# Tecnologias
 
 Esse projeto foi realizado usando as seguintes tecnologias:
 
@@ -21,9 +21,9 @@ Esse projeto foi realizado usando as seguintes tecnologias:
   <li><a href="https://developer.mozilla.org/docs/Web/API/Canvas_API">Canvas</a></li>
 </ul>
 
-# :construction_worker: Como rodar o projeto
+# Como rodar o projeto
 
-### :computer: Baixando o projeto
+### Baixando o projeto
 
 ```bash
 # Clone o repositório em sua máquina
