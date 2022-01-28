@@ -1,6 +1,6 @@
-<p align="center">
-  <h1>🐍 SnakeGame</h1>
-</p>
+<h1 align="center">
+  🐍 SnakeGame
+</h1>
 
 <p align="center">
   Jogo da cobrinha no gameboy.
